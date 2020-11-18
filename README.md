@@ -2,7 +2,7 @@
 **Важное уточнение** - Данная конфигурация предназначена для docker swarm на одной ноде и без использования docker machine.
 
 1. Склонировать проект
-2. Перейти в swarm mode - docker swarm
+2. Перейти в swarm mode - docker swarm init
 3. Запустить реплику приложения - docker stack deploy --compose-file docker-app-compose
 5. При необходимости срегулировать кол-во реплик приложения (по стандарту - 3) - docker service scale flask_app=число
 6. Запустить кластеризованный вариант mongodb (3 реплики - 1-read-write, 2-read) - docker-compose -f docker-mongo-compose
