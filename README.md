@@ -5,7 +5,7 @@
 2. Перейти в swarm mode - docker swarm init
 3. Запустить реплику приложения через stck - docker stack deploy --compose-file docker-app-compose.yml flask-app (**Название приложения важно**)
 5. При необходимости срегулировать кол-во реплик приложения (по стандарту - 3) - docker service scale flask-app_flask=ЧИСЛО
-6. Запустить кластеризованный вариант mongodb (3 реплики - 1-read-write, 2-read) - docker-compose -f docker-mongo-compose.yml up
+6. Запустить кластеризованный вариант mongodb (3 реплики - 1-read-write, 2-read) - docker-compose -f docker-mongo-compose.yml up -d
 7. Приложение доступно по адресу - http://localhost:8080/
 
 
